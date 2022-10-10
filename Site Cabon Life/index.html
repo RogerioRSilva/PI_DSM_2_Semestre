@@ -36,76 +36,187 @@
     </nav>
 
     <main>
-        <img class="logo" src="img/LogoCarbonLife PNG.png" alt="">
-        <div id="info1">
-            <!-- Incio dos cards informativos -->
-            <div class="card_info1">
-                <div class="img_card_info">
-                    <img src="img/teste.webp" alt="">
-
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, nostrum maiores beatae modi neque id
-                    quae distinctio ipsum sed unde adipisci error. Similique illum vel quia at laudantium nemo sed?
-                </p>
-                <button class="btn btn-success" >Leia Mais</button>
-            </div>
-            <div class="card_info2">
-                <div class="img_card_info">
-                    <img src="img/teste.webp" alt="">
-
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, nostrum maiores beatae modi neque id
-                    quae distinctio ipsum sed unde adipisci error. Similique illum vel quia at laudantium nemo sed?
-                </p>
-            </div>
-            <div class="card_info1">
-                <div class="img_card_info">
-                    <img src="img/teste.webp" alt="">
-
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, nostrum maiores beatae modi neque id
-                    quae distinctio ipsum sed unde adipisci error. Similique illum vel quia at laudantium nemo sed?
-                </p>
-            </div>
-            <!-- Fim dos cards informativos -->
+        <div class="logo">
+            <img src="img/LogoCarbonLife PNG.png" alt="">
         </div>
-
-        <div id="calc_function">
-            <h2 class="text-center titulo_calc">Calculadora de Consumo de CO²</h2>
-            <hr>
-            <section id="calculadora" class="layout_calc">
-                <div class="uso_calc">
-
-                </div>
-                
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorum eaque impedit ad omnis doloremque tempora, culpa atque odit. Sed enim repellendus magni non porro aspernatur, eveniet nulla eos quos.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae odit voluptas porro fuga, eum numquam totam velit officiis sint iure explicabo ipsum ipsa excepturi tempora quia magni possimus harum quod.
-            </section>
-
+        <!-- Informações e noticias -->
+        <div id="informacoes">
+            <div class="info">
+                <img src="img/teste.webp" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere id porro in alias ad voluptate sit
+                    iste sapiente praesentium, facilis dicta sed quasi commodi! Eius quam quod rem adipisci atque?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere id porro in alias ad voluptate sit
+                    iste sapiente praesentium, facilis dicta sed quasi commodi! Eius quam quod rem adipisci atque?
+                </p>
+                <button class="btn btn-success">Leia Mais...</button>
+            </div>
+            <div class="info">
+                <img src="img/teste.webp" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere id porro in alias ad voluptate sit
+                    iste sapiente praesentium, facilis dicta sed quasi commodi! Eius quam quod rem adipisci atque?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere id porro in alias ad voluptate sit
+                    iste sapiente praesentium, facilis dicta sed quasi commodi! Eius quam quod rem adipisci atque?
+                </p>
+                <button class="btn btn-success">Leia Mais...</button>
+            </div>
+            <div class="info">
+                <img src="img/teste.webp" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere id porro in alias ad voluptate sit
+                    iste sapiente praesentium, facilis dicta sed quasi commodi! Eius quam quod rem adipisci atque?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere id porro in alias ad voluptate sit
+                    iste sapiente praesentium, facilis dicta sed quasi commodi! Eius quam quod rem adipisci atque?
+                </p>
+                <button class="btn btn-success">Leia Mais...</button>
+            </div>
         </div>
+        <!-- FIM Informações e noticias -->
 
-        <div id="calc_function">
-            
-
-            <section id="calculadora" class="layout_calc">
-                <div class="uso_calc">
-
-                </div>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora id nostrum sunt atque consectetur amet dolorum! Delectus, dignissimos. Atque illum alias quod nesciunt aliquid iure recusandae vel incidunt harum deserunt?
-            </section>
-
+        <!-- Inicio do setor da calculadora -->
+        <div class="titulo_calc">
+            <h2>Calculadora de Consumo de CO2</h2>
         </div>
+        <div id="calculadora">
+            <!-- recebimento de dados -->
+            <div class="pega_info">
+                <form action="">
+                    <div class="form-group">
+                        <label for="usuario" class="lb1">Marca/Modelo do Veículo</label>
+                        <input class="form-control form-control-sm" type="text" id="usuario"
+                            placeholder="Digite o teipo de veículo">
+                    </div>
+                    <div class="form-group">
+                        <label for="usuario" class="lb1">Tipo de Veículo</label>
+                        <input class="form-control form-control-sm" type="text" id="usuario"
+                            placeholder="Digite o teipo de veículo">
+                    </div>
+                    <div class="form-group">
+                        <label for="usuario" class="lb1">Placa do Veículo</label>
+                        <input class="form-control form-control-sm" type="text" id="usuario"
+                            placeholder="Digite sua placa">
+                    </div>
+                    <div class="form-group">
+                        <label for="estados" class="lb1">Tipo de Combustível</label>
+                        <select class="form-control" id="estados">
+                            <option>Gasolina</option>
+                            <option>Alcool</option>
+                            <option>Diesel</option>
+                            <option>GNV</option>
+                            <option>Elétrico</option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="usuario" class="lb1">KM Rodado</label>
+                        <input class="form-control form-control-sm" type="number" id="usuario"
+                            placeholder="Digite o KM rodado">
+                    </div>
 
-        <div id="calc_function">
 
-            <section id="calculadora" class="layout_calc">
-                <img width="800px" src="img/teste.webp" alt="">
 
-            </section>
+                </form>
+                <div class="botoes">
+                    <button class="btn btn-light" title="Calcula o consumo de CO²">Calcular</button>
+                    <button class="btn btn-light" title="Limpa as informações">Limpar</button>
+                    <button class="btn btn-warning" title="Gera relatório somente com cadastro">Relatório</button>
+                </div>
 
+
+            </div>
+            <div class="recebe_info">
+                <h3 class="titulo_recebe">Resultado do Calculo</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Veiculo</th>
+                            <th scope="col">Modelo</th>
+                            <th scope="col">Placa</th>
+                            <th scope="col">Combustível</th>
+                            <th scope="col">KM Rodado</th>
+                            <th scope="col">Consumo CO²</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larry the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larry the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larry the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="estatisticas">
+            <div class="statistic_card">
+                <div class="img_static">
+                    <h2>Titulo</h2>
+                    <img src="img/teste.webp" alt="">
+                    <span>Imagem ilustrativa</span>
+                </div>
+
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore necessitatibus fugit illo, natus
+                        quod iure modi temporibus illum, delectus hic dolores, velit reprehenderit possimus doloremque
+                        quam voluptatum. Quisquam, sint quod!</p>
+                </div>
+
+            </div>
+
+            <div class="statistic_card2">
+
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore necessitatibus fugit illo, natus
+                        quod iure modi temporibus illum, delectus hic dolores, velit reprehenderit possimus doloremque
+                        quam voluptatum. Quisquam, sint quod!</p>
+                </div>
+                <div class="img_static2">
+                    <h2>Titulo</h2>
+                    <img src="img/teste.webp" alt="">
+                    <span>Imagem ilustrativa</span>
+                </div>
+
+            </div>
         </div>
     </main>
 
+    <footer>
+        <div class="rodape">
+            <p>&copy;copyright - 2022 - 2º DSM - FATEC Franca (Projeto Interdisciplinar)</p>
+        </div>
+    </footer>
 
 
 
