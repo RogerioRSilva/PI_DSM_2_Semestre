@@ -1,7 +1,60 @@
-*. {
-    margin: 0;
-    padding: 0;
+@keyframes anime1 {
+    0%{
+        top:-10rem;
+        transform: rotate(0);
+    }
+    100%{
+        top: -1rem;
+        transform: rotate(60);
+    }
+
 }
+@keyframes anime2 {
+    0%{
+        top:-10rem;
+        transform: rotate(0);
+    }
+    100%{
+        top: 1.5rem;
+        transform: rotate(69deg);
+    }
+
+}
+@keyframes anime3 {
+    0%{
+        top:-10rem;
+        transform: rotate(0);
+    }
+    100%{
+        top: 5rem;
+        transform: rotate(90deg);
+    }
+
+}
+@keyframes anime4 {
+    0%{
+        top:-10rem;
+        transform: rotate(0);
+    }
+    100%{
+        top: 8rem;
+        transform: rotate(50deg);        
+    }
+
+}
+@keyframes anime5 {
+    0%{
+        top:-10rem;
+        transform: rotate(-1);
+    }
+    100%{
+        top: 7.5rem;
+        transform: rotate(-15deg);
+    }
+
+}
+
+
 
 body {
     background: url('../img/fundositePI.svg');
@@ -14,19 +67,7 @@ body {
     src: url("../fonts/Road_Rage.woff");
 }
 
-@media only screen and (min-width:360px) {
-    body {
-        background-size: cover;
-    }
 
-}
-
-@media only screen and (min-width:800px) {
-    body {
-        background-size: cover;
-    }
-
-}
 
 /* @media only screen and (min-width:1800px) {
     body {
@@ -35,11 +76,10 @@ body {
 
 } */
 
-nav {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.menu ul li{
+    color: rgb(255, 255, 255);
     font-weight: bold;
-    font-size: 22px;
-    color: black;
+    font-size: 20px;
 
 }
 
@@ -50,7 +90,8 @@ nav {
     right: 2rem;
     top: -1rem;
     z-index: 4;
-
+    transition: all;
+    animation: anime1 1s linear forwards;
 }
 
 .folha2 {
@@ -60,6 +101,8 @@ nav {
     right: 4rem;
     top: 1.5rem;
     z-index: 3;
+    transition: all;
+    animation: anime2 1.2s linear forwards;
 }
 
 .folha3 {
@@ -69,6 +112,8 @@ nav {
     right: 6.6rem;
     top: 5rem;
     z-index: 2;
+    transition: all;
+    animation: anime3 1.4s linear forwards;
 }
 
 .folha4 {
@@ -78,15 +123,19 @@ nav {
     right: 8.8rem;
     top: 8rem;
     z-index: 1;
+    transition: all;
+    animation: anime4 1.6s linear forwards;
 }
 
 .folha5 {
     width: 5rem;
     position: relative;
-    transform: rotate(-5deg);
+    transform: rotate(-15deg);
     right: 10.5rem;
     top: 7.5rem;
     z-index: 0;
+    transition: all;
+    animation: anime5 1.8s linear forwards;
 }
 
 
@@ -100,6 +149,7 @@ nav {
     justify-content: center;
     position: relative;
     top: -4rem;
+    
 }
 
 #informacoes{
@@ -136,13 +186,22 @@ nav {
     text-align: justify;
 
 }
-
+.info span{
+    font-size: 12px;
+}
 .info button{
     width: 30%;
     position: relative;
-    top: 7rem;
+    top: 1rem;
     left: 22rem;
 
+}
+
+#btn_co{
+    width: 30%;
+    position: relative;
+    top: 2rem;
+    left: 22rem;
 }
 
 #calculadora{
@@ -309,6 +368,20 @@ nav {
     margin-right: 2rem;
     /* border: 1px solid red; */
     
+}
+
+.statistic_text1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.statistic_text1 button{
+    position: relative;
+    top: 3rem;
+    left: -31rem;
 }
 
 .rodape{
